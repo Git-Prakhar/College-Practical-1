@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Acropolis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="navbar">
+        <div id="logo"></div>
+        <div id="navBtns">
+            <ul>
+                <li><a href='#section1'>Home</a></li>
+                <li><a href='#section2'>About</a></li>
+                <li><a href='#section3'>Courses</a></li>
+                <li><a href='#section4'>Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="section1">
+        <div class="grayscale"></div>
+        <div id="headingmain">
+            <div class="line"></div>
+            FCA DEPARTMENT
+            <div class="line"></div>
+        </div>
+    </div>
+    <div id="heading">
+        <div class="line"></div>
+        FCA DEPARTMENT
+        <div class="line"></div>
+    </div>
+    <div id="section2">
+        <h1>About FCA</h1>
+        <div id='s2CardHolder'>
+            <div id="card1">
+                <img src="buildin2.png" alt="building" id="c1Img">
+                <div id="c1Text">
+                    <h3>Faculty of Computer Application</h3><br>
+                    <p>
+                        The Faculty of Computer Applications (FCA) is a dedicated department within
+                        <strong>AITR</strong>
+                        that focuses on providing comprehensive academic programs in the field of computer
+                        applications. The department typically offers courses at both undergraduate and postgraduate
+                        levels,
+                        including Bachelor of Computer Applications (BCA), Master of Computer Applications (MCA), and
+                        potentially other specialized programs like Integrated MCA (IMCA).
+                    </p>
+                </div>
+            </div>
+            <div id="card2">
+                <div id="ourVision" class="vnm">
+                    <div class="c2Text">
+                        <h2>Our Vision</h2><br>
+                        <p>At the Faculty of Computer Applications (FCA), our vision is to be a leading institution that
+                            empowers students to become future innovators and leaders in the dynamic field of computer
+                            applications. We aspire to create a learning environment that fosters creativity, critical
+                            thinking,
+                            and technical excellence, enabling our graduates to make significant contributions to the
+                            ever-evolving world of technology.</p>
+                    </div>
+                </div>
+                <div id="ourMission" class="vnm">
+                    <div class="c2Text">
+                        <h2>Our Mission</h2><br>
+                        <p><strong>Comprehensive Education</strong>: Deliver high-quality programs to equip students
+                            with a robust
+                            foundation in computer applications, preparing them for professional success.
+                            <br><br>
+                            <strong>Innovation and Collaboration</strong>: Cultivate a culture of innovation and
+                            research, motivating
+                            students and faculty to explore cutting-edge technologies and contribute to advancements in
+                            the field through active industry collaborations.
+                            <br><br>
+                            <strong>Holistic Development</strong>: Focus on nurturing students' holistic development,
+                            fostering
+                            interpersonal skills, leadership qualities, and ethical values to shape responsible and
+                            well-rounded individuals engaged in lifelong learning.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="section3">
+        <h1>Courses</h1>
+        <div id="s3CardHolder">
+            <div class="card3">
+                <img src='bca.jpg' alt="" />
+                <div class="c3Text"><strong>Bachelor of Computer Applications</strong>, it is an undergraduate academic
+                    degree program
+                    that focuses on computer applications and software development. BCA is a popular choice for students
+                    who are interested in pursuing a career in the field of information technology and computer science.
+                </div>
+            </div>
+            <div class="card3">
+                <img src='mca.jpg' alt="" />
+                <div class="c3Text"><strong>Master of Computer Applications</strong>, it is a postgraduate academic
+                    degree
+                    program that builds on the foundational knowledge gained in undergraduate studies, particularly in
+                    the field of computer applications and information technology.
+                </div>
+            </div>
+            <div class="card3">
+                <img src='IMCA.jpg' alt="" />
+                <div class="c3Text"><strong>Integrated Master of Computer Applications (IMCA)</strong> is a unique and
+                    specialized
+                    academic program that combines both undergraduate and postgraduate studies in computer applications.
+                    This integrated program typically spans a duration of five years and is designed to provide students
+                    with a seamless educational journey from the basics of computer science to advanced and specialized
+                    topics.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="section4">
+        <h1>Contact</h1>
+        <div id="mac">
+            <div id="map">
+                Location : 
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d919.3660529604183!2d75.94336057968951!3d22.822308847579997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjLCsDQ5JzIxLjkiTiA3NcKwNTYnMzcuMiJF!5e0!3m2!1sen!2sin!4v1704444239490!5m2!1sen!2sin"
+                    width="600" height="450" style="border:2px solid black; width: 700px;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div id="contact">
+                Contact :
+                <div id="number">
+                    <img src="icons8-phone-50.png" alt="phone.img">
+                    <p>+91 123456789</p>
+                </div>
+                <hr>
+                <div id="email">
+                    <img src="icons8-mail-52.png" alt="phone.img">
+                    <p>fca@acropolis.in</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        Created By <strong>Prakhar Khandelwal <br>BCA Ist Year</strong>
+    </footer>
+</body>
+<script>
+    document.addEventListener('scroll', () => {
+        let scrollY = parseInt(window.scrollY);
+        if (scrollY <= 930) {
+            let logo = document.querySelector('#logo');
+            let navbtns = document.querySelector('#navBtns');
+            logo.style.left = -scrollY * 0.25 + 'px';
+            navBtns.style.left = scrollY * 0.45 + 'px';
+        } else {
+            let logo = document.querySelector('#logo');
+            let navbtns = document.querySelector('#navBtns');
+            logo.style.left = -930 * 0.25 + 'px';
+            navBtns.style.left = 930 * 0.45 + 'px';
+        }
+    })
+</script>
+
+</html>
